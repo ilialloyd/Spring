@@ -1,0 +1,31 @@
+package com.company.springdemo.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.company.springdemo.customer.Customer;
+
+@Controller
+@RequestMapping("/customer")
+public class CustomerController {
+	
+	@RequestMapping("/fillForm")
+	public String fillForm(Model model) {
+		
+		
+		model.addAttribute("customerAtt", new Customer());// birdasha define elemeden new student i gonderirik
+		return "customer-form";
+		
+	}
+	
+	@RequestMapping("/processForm")
+	public String processForm(@ModelAttribute("theCustomer")Customer theCustomer) {
+		System.out.println("Customer info: "+theCustomer.getFirstName()+" "+theCustomer.getLastName());
+		return "process-form";
+		
+	}
+	
+
+}

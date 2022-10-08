@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.company.spring&apos; to &apos;JavaSpringNoXML/src&apos;&#x0D;&#x0A;- Original project: &apos;noXML&apos;&#x0D;&#x0A;- Destination element: &apos;JavaSpringNoXML/src&apos;&#x0D;&#x0A;- Original element: &apos;noXML/src/com.company.spring&apos;" description="Copy package" destination="=JavaSpringNoXML/src" element1="/src&lt;com.company.spring" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1662652053118" version="1.0"/>
+</session>

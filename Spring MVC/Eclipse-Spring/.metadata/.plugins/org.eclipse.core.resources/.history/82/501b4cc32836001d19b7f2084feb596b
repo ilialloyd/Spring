@@ -1,0 +1,7 @@
+package com.company.springdemo.validation;
+
+
+..
+public @interface CourseCode {
+
+}

@@ -1,0 +1,3 @@
+#custom error message resource fayl\u0131nda yarad\u0131b sonra spring servlet containerinde
+# bean kimi elan edilir
+typeMismatch.customer.freePasses=Invalid number

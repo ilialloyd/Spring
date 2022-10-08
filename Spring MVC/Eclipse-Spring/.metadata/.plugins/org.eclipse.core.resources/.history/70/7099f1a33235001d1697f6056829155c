@@ -1,0 +1,40 @@
+package com.company.springdemo.controllers;
+
+import javax.validation.Valid;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.company.springdemo.customer.Customer;
+
+@Controller
+@RequestMapping("/customer")
+public class CustomerController {
+
+	@RequestMapping("/fillForm")
+	public String fillForm(Model model) {
+
+		model.addAttribute("customerAtt", new Customer());// birdasha define elemeden new student i gonderirik
+		return "customer-form";
+
+	}
+
+	@RequestMapping("/processForm")
+	public String processForm(
+			@Valid @ModelAttribute("theCustomer") Customer theCustomer, // @Valid apply and perform validation rules on customer object
+			BindingResult bindingResult) { // Result of valudation placed in the BindingResult
+		// Important!!! BindingResult always should come after valid,model annotated
+		// object instance
+		System.out.println("Customer info: " + theCustomer.getFirstName() + " " + theCustomer.getLastName());
+
+		if (bindingResult.hasErrors()) {
+			return "customer-form";
+		} else {
+			return "customer-confirmation";
+		}
+	}
+
+}

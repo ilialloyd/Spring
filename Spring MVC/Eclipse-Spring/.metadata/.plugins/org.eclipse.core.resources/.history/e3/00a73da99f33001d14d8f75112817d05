@@ -1,0 +1,37 @@
+package com.company.springdemo.student;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Component;
+
+@Component
+
+
+//how to send actual country name to the web
+public class CountryDataSource {
+
+	private Map<String, String> countryOptions;
+
+	public CountryDataSource() {
+		
+		countryOptions = new LinkedHashMap<>();
+		
+		// populate country options: used ISO country code
+		countryOptions.put("AZE", "Azerbaijan");
+		countryOptions.put("TR", "Turkey");
+		countryOptions.put("ARM", "Armenia");
+		countryOptions.put("IR", "Iran");
+		countryOptions.put("RF", "Russia");
+
+	}
+
+	public void setCountryOptions(Map<String, String> countryOptions) {
+		this.countryOptions = countryOptions;
+	}
+
+	public Map<String, String> getCountryOptions() {
+		return countryOptions;
+	}
+
+}

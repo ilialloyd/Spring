@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<!-- Add a logger config to see logging messages. - For more detailed logs, 
+		set values to "FINEST" - For info on logging levels, see: http://www.vogella.com/tutorials/Logging/article.html -->
+	<bean id="myLoggerConfig"
+		class="com.company.springdemo.MyLoggerConfig" init-method="initLogger">
+		<property name="rootLoggerLevel" value="FINE" />
+		<property name="printedLoggerLevel" value="FINE" />
+	</bean>
+
+
+
+	<!-- load the properties file: sport.properties -->
+	<context:property-placeholder
+		location="classpath:sport.properties" />
+
+
+	<!-- Define your beans here -->
+
+	<!-- Define the dependency here -->
+
+	<bean id="myFortuneService"
+		class="com.company.springdemo.HappyFortuneService">
+	</bean>
+
+
+<!--  this bean has singleton scope by default -->
+<!--  If you want to create new object everytime you use, you should add scope:prototype -->
+	<bean id="myCoach" class="com.company.springdemo.TrackCoach"
+	scope="prototype">
+
+		<!-- set up constructor injection here -->
+		<constructor-arg ref="myFortuneService" />
+	</bean>
+
+
+
+
+
+
+</beans>
+
+
+
+
+

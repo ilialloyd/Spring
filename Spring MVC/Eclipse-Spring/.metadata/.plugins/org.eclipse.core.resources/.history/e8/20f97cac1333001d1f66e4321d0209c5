@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+
+<title>Spring MVC Demo</title>
+
+<body>
+
+<h2> Spring MVC Demo - Home Page </h2>
+
+<!--  to add link text we add this line -->
+<hr>
+<a href="/hello/showform">Enter for form</a>
+
+<a href="student/showform">Student form</a>
+
+</body>
+</html>

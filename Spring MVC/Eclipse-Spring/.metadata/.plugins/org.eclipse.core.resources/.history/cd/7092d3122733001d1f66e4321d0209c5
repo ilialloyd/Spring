@@ -1,0 +1,35 @@
+package com.company.springdemo.student;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+ 
+import org.springframework.stereotype.Component;
+ 
+
+//another way doing data is this
+@Component
+public class DemoDataSource {
+ 
+	private Map<String, String> countryOptions;
+ 
+	public DemoDataSource() {
+		
+		// populate country options: used ISO country code
+		countryOptions = new LinkedHashMap<>();
+		
+		countryOptions.put("BR", "Brazil");
+		countryOptions.put("FR", "France");
+		countryOptions.put("DE", "Germany");
+		countryOptions.put("IN", "India");
+		countryOptions.put("US", "United States of America");		
+		
+	}
+ 
+	public Map<String, String> getCountryOptions() {
+		return countryOptions;
+	}
+ 
+	public void setCountryOptions(Map<String, String> countryOptions) {
+		this.countryOptions = countryOptions;
+	}
+}

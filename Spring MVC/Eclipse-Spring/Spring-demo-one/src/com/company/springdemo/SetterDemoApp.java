@@ -1,0 +1,30 @@
+package com.company.springdemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SetterDemoApp {
+
+	public static void main(String[] args) {
+
+		// load the spring configration
+		ClassPathXmlApplicationContext xml = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+		// retrieve bean from spring container
+		CricketCoach theCoach = xml.getBean("myCricketCoach", CricketCoach.class);
+
+		// call method on the bean
+		System.out.println(theCoach.getDailyWorkout());
+
+		System.out.println(theCoach.getDailyFortune());
+
+		// call our new methods to get the litreral values
+		System.out.println(theCoach.getEmailAddress());
+
+		System.out.println(theCoach.getTeam());
+
+		// close the context
+		xml.close();
+
+	}
+
+}

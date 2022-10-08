@@ -1,0 +1,21 @@
+package com.company.springdemo.student;
+
+import java.util.Map;
+
+public class CountryDataSource {
+
+	private Map<String, String> countryOptions;
+
+	public CountryDataSource() {
+		countryOptions.put("AZE", "Azerbaijan");
+		countryOptions.put("TR", "Turkey");
+		countryOptions.put("ARM", "Armenia");
+		countryOptions.put("IR", "Iran");
+		countryOptions.put("RF", "Russia");
+
+	}
+	
+	
+	
+
+}

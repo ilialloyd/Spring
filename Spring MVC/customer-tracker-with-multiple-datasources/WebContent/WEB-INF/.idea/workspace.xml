@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7bf4bc84-e2e4-4a33-8b10-540ea3163f08" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/src/main/java/org/example/Inserting_Updating_DML.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/src/main/java/org/example/JdbcDaoDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/src/main/java/org/example/Main_DQL_fetching_data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/target/classes/org/example/Inserting_Updating_DML.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/target/classes/org/example/JdbcDaoDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/target/classes/org/example/Main_DQL_fetching_data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/target/classes/org/example/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JDBC-MySQL_using_in_JAVA/target/classes/org/example/StudentDAO.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2FVFJQPvk19Rak4LgRC8tHGa80S" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Owner/Desktop/customer-tracker-with-multiple-datasources/WebContent/WEB-INF",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7bf4bc84-e2e4-4a33-8b10-540ea3163f08" name="Changes" comment="" />
+      <created>1664569272019</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664569272019</updated>
+      <workItem from="1664569273629" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

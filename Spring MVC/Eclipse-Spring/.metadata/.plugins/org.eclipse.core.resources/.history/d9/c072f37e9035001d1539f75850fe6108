@@ -1,0 +1,2 @@
+typeMismatch.customerAtt.freePasses=number is required
+#error type/spring model attribute name/field name/our custom message

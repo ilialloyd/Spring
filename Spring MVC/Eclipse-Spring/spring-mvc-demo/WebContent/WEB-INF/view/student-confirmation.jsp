@@ -1,0 +1,44 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registered</title>
+</head>
+<body>
+	<!--   Student is the attribute name from the processForm() method -->
+
+	The Student is confirmed: ${bstudent.firstName} ${bstudent.lastName}
+
+	<br>
+	<br> Country: ${bstudent.selectedCountryValue}
+
+	<br>
+	<br>
+
+	<%-- Favorite Language: ${bstudent.favoriteLanguage} --%>
+	Favorite Language: ${bstudent.favoriteLanguage}
+
+	<br>
+	<br>
+
+
+	<%--Operation System məsələsində birdən çox checknox seçilə bilər deyə foreach jsp taq ile edeceyik
+qısa şəkildəı 1ci sətrdəki kitabxananı qeyd eləməyimiz lazımdır
+               to display bulletlist istifade edeceyik--%>
+
+	Operating Systems:
+	<ul>
+		<c:forEach var="temp" items="${bstudent.operatingSystems}">
+
+			<li>${temp}</li>
+
+			<%-- temp variablesi yaradiriq, ona itemsden secilenleri menimsedib sonra tempi bulletpointe gonderirik.1 den coxc olsa da ozu listleyecek --%>
+
+		</c:forEach>
+
+
+
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+package com.company.springdemo.mvc;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+//if you try to use 2 exact paths you may get this error.
+//java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'sillyController' method 
+//com.company.springdemo.mvc.SillyController#displayTheForm()
+//to { [/showform]}: There is already 'helloWorldController' bean method
+
+// in this case, we can use @Controller level RequestMapping
+// instead of http://localhost:8080/showform
+//http://localhost:8080/silly/showform
+
+//but in this case I will edit Helloworld one
+
+
+@Controller
+public class SillyController {
+
+	@RequestMapping("/showform")//different method name, same path
+	public String displayTheForm() {
+		return "silly";
+	}
+	
+	
+
+}

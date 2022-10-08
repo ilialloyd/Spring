@@ -1,0 +1,3 @@
+1 create folder and add jar files there
+2. go properties -> java built path and add jar files to classpath
+and referenced libraries will be created 

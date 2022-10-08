@@ -1,0 +1,88 @@
+package com.company.springdemo.student;
+
+public class Student {
+
+	private String firstName;
+	private String lastName;
+	private String country;
+
+	
+	
+	//TO define country in the class level instead of jsp
+	
+//	private LinkedHashMap<String,String>countryOptions;
+	
+	//constructore elave ederek spring klasi caqirdiqinda oturmus olacayiq
+	public Student() {
+//		           
+//		countryOptions = new LinkedHashMap<>();
+//		            // key/code   value/label
+//		countryOptions.put("BR", "Brazil");
+//		countryOptions.put("UK", "United Kingdom");
+//		countryOptions.put("AUS", "Australia");
+//		countryOptions.put("AZE", "Azerbaijan");
+//		
+	}
+	
+	
+	
+	CountryDataSource countryOptions ;
+	
+	
+	
+//	
+//	public LinkedHashMap<String, String> getCountryOptions() {
+//		return countryOptions;
+//	}
+
+////if I want to get value of LinkedHashMap
+//	public String getSelectedCountryValue() {
+//		return countryOptions.get(country);
+//	}
+////if I want to get key of LinkedHashMap
+//	public String getSelectedCountryKey() {
+//		return country;
+//	}
+//	
+//
+//
+//
+//
+//
+//
+//
+//	public void setCountryOptions(LinkedHashMap<String, String> countryOptions) {
+//		this.countryOptions = countryOptions;
+//	}
+//
+
+
+
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+}
