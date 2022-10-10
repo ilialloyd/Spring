@@ -1,0 +1,39 @@
+TO start project
+
+step 1: MySpringMvcDispatcherServletInitializer
+
+Step 2: DemoAppConfig
+
+step 3: create @RestController DemoRestController
+
+step 4: Create entity
+
+step 5: create Student Rest Controller and give new path.
+@PathVariable - find special path variable
+
+step 6: Create own Exception
+
+step 6.1: Create StudentErrorResponse(Error Entity)
+
+step 6.2: Add if method for throw Exception
+
+step 6.3: Create StudentNotFoundException class for response. It helps forntEnd as well
+
+step 6.4:  Create ResponseEntity method and @ExceptionHandler to handle exception
+
+This is HTTP error wrapper that we can put body, change message of the error
+
+
+We also need a generic error to throw for all kind of different errors
+
+QUOTA:
+The exception handler will try to find the specific exception(MyException) handler
+ firstly, if not it will try to find the generic exception(Exception).
+ so for your example, when controller throw MyException, the handler will invoke the MyException handler.
+
+step 7: Create ResponseEntity method and @ExceptionHandler to handle Generic Exceptions
+
+step 8: Global Exceptions - StudentRestExceptionHandling  with @ControllerAdvice
+
+
+
