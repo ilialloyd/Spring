@@ -85,7 +85,7 @@ public class DemoSecurityConfig {
                 .logout(configurer ->
                         configurer
                                 .permitAll())
-                 //access denied configuration
+                //access denied configuration
                 .exceptionHandling(configurer ->
                         configurer
                                 .accessDeniedPage("/access-denied")
